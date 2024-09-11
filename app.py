@@ -6,10 +6,8 @@ app = Flask(__name__)
 @app.route('/')
 def blog():
     return render_template('index.html') 
-# Home Page
-@app.route('/home')
-def home():
-    return render_template('home.html')
+
+
 
 # About Page
 @app.route('/about')
@@ -38,4 +36,4 @@ def thank_you():
     return "Thank you for contacting us!"
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
