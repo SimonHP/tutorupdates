@@ -3,7 +3,7 @@ from flask import Flask, render_template, request, redirect, url_for
 app = Flask(__name__)
 
 # Blog Page (Old index.html)
-@app.route('/', methods = ['GET'])
+@app.route('/')
 def blog():
     return render_template('index.html') 
 # Home Page
