@@ -6,15 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Updates</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Updates</h1>
+            <h1>Updates Page</h1>
             <nav>
                 <ul>
                     <li><a href="{{ url_for('about') }}">About</a></li>
                     <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                    
+                    
                 </ul>
             </nav>
         </div>
@@ -23,24 +26,30 @@
     <section class="blog-posts">
         <div class="container">
             <article class="post">
-                <h2>First Blog Post</h2>
-                <p class="date">Published on: September 1, 2024</p>
-                <p>This is my first update.</p>
-                <a href="#" class="read-more">Read more</a>
-            </article>
+                <h2>Recent Update</h2>
+                <p class="date">Published on: September 16, 2024</p>
+                <p>Dear students
 
+                    Welcome back, I hope you all had a good summer break.
+
+                    We need to meet in Teams in October so I will send you a Teams invite. PLEASE CONFIRM ASAP please.......</p>
+                <a href="{{ url_for('update1') }}">Read more</a>
+            </article>
+            <!--
             <article class="post">
                 <h2>Second Blog Post</h2>
                 <p class="date">Published on: September 8, 2024</p>
                 <p>This is my second update</p>
                 <a href="#" class="read-more">Read more</a>
             </article>
+            -->
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024  2024 PTUpdates. All Rights Reserved</p>
+    
+    <p>&copy; 2024  2024 PTUpdates. All Rights Reserved</p>
         </div>
     </footer>
 </body>

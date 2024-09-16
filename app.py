@@ -25,6 +25,11 @@ def blog():
 def about():
     return render_template('about.html')
 
+#update1 page
+
+@app.route('/update1')
+def update1():
+    return render_template('update1.html')
 
 
 

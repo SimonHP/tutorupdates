@@ -36,6 +36,13 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
 }
+/*banner */
+.banner {
+    padding-top:5px;
+    height:480px;
+    position:relative;
+    background:url(https://images.app.goo.gl/sbcqCDEX4ScXCTY36) left top no-repeat;
+ }
 
 /* Blog section styles */
 .blog-posts {
