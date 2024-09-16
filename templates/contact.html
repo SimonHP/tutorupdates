@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Contact - My Blog</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>My Blog</h1>
+            <h1>CONTACT ME</h1>
             <nav>
                 <ul>
-                    <li><a href="{{ url_for('blog') }}">Blog</a></li>
+                    <li><a href="{{ url_for('blog') }}">Updates</a></li>
                     <li><a href="{{ url_for('about') }}">About</a></li>
-                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                
                 </ul>
             </nav>
         </div>
@@ -23,28 +23,30 @@
 
     <section class="content">
         <div class="container">
-            <h2>Contact Us</h2>
-            <p>If you have any questions or comments, feel free to contact us using the form below.</p>
+            <h2>Contact</h2>
+            <p>If you have any questions or comments, feel free to contact me using the form below.</p>
 
             <!-- Contact Form -->
-            <form action="/contact" method="POST">
+            <form action="{{ url_for('contact')}}" method="POST">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
 
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-
+                <br><br>
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
+                <br>
+                <textarea id="message" name="message" rows="8" required></textarea>
+                <br><br>
                 <button type="submit">Send Message</button>
             </form>
+            <p><br><br><br></p>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 My Blog. All Rights Reserved.</p>
+            <p>&copy;  2024 PTUpdates. All Rights Reserved.</p>
         </div>
     </footer>
 </body>
