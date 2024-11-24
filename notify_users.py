@@ -17,7 +17,8 @@ mail = Mail(app)
 
 # List of subscriber emails
 subscribers = [
-    "hastingssp1234@gmail.com"
+    "hastingssp1234@gmail.com", "shpalmer@consultant.com", "V.Adjei-Darko1@uni.bsms.ac.uk","I.Close1@uni.bsms.ac.uk",
+    "M.Heelam-Mcdonnell2@uni.bsms.ac.uk","L.Humphrys1@uni.bsms.ac.uk", "K.Anderson1@uni.bsms.ac.uk","I.Chamberlain@uni.bsms.ac.uk",
 ]
 
 def send_notification():
@@ -28,7 +29,7 @@ def send_notification():
 
         I've just published a new update on the personal tutor updates website! Click the link below to read it:
 
-        http://yourwebsite.com/blog
+        https://tutorupdates.onrender.com
 
         Thank you
 
