@@ -31,7 +31,7 @@ def send_notification():
 
         https://tutorupdates.onrender.com
 
-        Please emal me to confirm seen. 
+        Please email me to confirm seen. 
 
         Thank you
 
